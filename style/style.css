@@ -145,8 +145,8 @@
    
 }
 .container-card{
-    width: 350px;
-    height: 430px;
+    width: 380px;
+    height: 650px;
     text-align: center;
     border: 1px solid black;
     border-radius: 10px;
@@ -157,6 +157,11 @@
 
 }
 .container-card h2{
+    color: white;
+    font-size: 20px;
+}
+.container-card p{
+    font-size: 11px;
     color: white;
 }
 .container-card button{
