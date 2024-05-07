@@ -43,10 +43,8 @@
     color: #BE7B72;
 }
 
-.redes li{
-    display: inline-block;
-    margin-bottom: 5px;
-}
+
+
 
 /* INDEX */
 
@@ -73,12 +71,26 @@
 .hr1{
     margin-top: 50px;
 }
-.sponsorslogo{
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    list-style-type: none;
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
 
+.slider .slide-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+    width: calc(200px * 7);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
 }
 .contacto{
     color: white;
@@ -116,11 +128,51 @@
 .productosmain{
     font: helvetica;
 }
+
 .titulo-product{
     text-align: center;
 }
-.titulo-product h2{
-    font-size: 25px;
+
+.productos2{
+    display: grid;
+    grid-template-columns: repeat(2,900px) ;
+    grid-template-rows: repeat(2,900px);
+    grid-template-areas: 
+    "product1 product2"
+    "product3 product4" 
+    ;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid .product1{
+    grid-area: product1;
+}
+
+.grid .product2{
+    background-color: white;
+    grid-area: product2;
+
+}
+.grid .product3{
+    grid-area: product3;
+}
+.grid .product4{
+    grid-area: product4;
+}
+
+.product1{
+    margin-left: 20px;
+}
+.product2{
+    margin-left: 40px;
+    margin-right: 40px;
+    
+
+}
+
+.product3{
+    
 }
 
 
@@ -128,7 +180,16 @@
 .nosotros1{
     text-align: center;
     font: helvetica;
-
+    font-size: 30px;
+    color: white;
+}
+.nosotros1 h1{
+    font-size: 40px;
+}
+.imagenesnosotros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -142,6 +203,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
    
 }
 .container-card{
@@ -194,6 +256,7 @@
 
 }
 
+
 .formularios{
     color: white;
     font: helvetica;
@@ -216,8 +279,11 @@
     font-family: helvetica;
 
 }
+.piepag ul{
+    list-style-type: none;
+}
 .piepag h3{
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .piepag h2{
     margin-top: 10px;
@@ -232,7 +298,251 @@
     gap: 15px;
 }
 
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
 
 
+/* Media queries */
+
+/* media index */
+@media (max-width:1440px){
+    .secciones li{
+         height: 100px;
+         font-size: 16px;
+         margin-top: 70px;
+        padding: 4px;
+    }
+    .sponsorslogo{
+        gap: 30px;
+    
+    }
+
+}
+
+@media (max-width:1024px){
+    .principalnav{
+        display: flex;
+        align-items: none;
+    }
+    .secciones{
+        display: flex;
+        font-size: 10px;
+        gap: 10px;
+        margin-right: 100px;
+    }
+   .logoprinci{
+        height: 50%;
+        width: 50%;
+    }
+    .contacto h2{
+        font-size: 25px;
+    }
+    .contacto h3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:768px){
+    .principalnav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logoprinci{
+        height: 40%;
+        width: 70%;
+        margin-left: 110px;
+    }
+    .secciones{
+        gap: 5px;
+        margin-left: 80px;
+    }
+    .secciones li a{
+        font-size: 18px;
+    }
+    .contacto h2{
+        font-size: 24px;
+    }
+    .contacto h3{
+        font-size: 18px;
+    }
+    .piepag h3{
+        font-size: 16px;
+    }
+    .piepag h2{
+        padding-left: 80px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:428px){
+    .logoprinci{
+        align-items: center;
+        height: 40%;
+        width: 300px;
+        margin-right: 130px;
+    }
+    .secciones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .secciones li{
+        margin-top: 1px;
+    }
+    .secciones li a{
+        font-size: 16px;
+    }
+    .contacto{
+        margin-left: 10px;
+    }
+    .contacto h2{
+        font-size: 20px;
+    }
+    .contacto h3{
+        font-size: 16px;
+    }
+
+    .piepag{
+        flex-direction: column;
+    }
+
+    .piepag h3{
+        font-size: 14px;
+        margin-left: 90px;
+        margin-bottom: 1px;
+    }
+    .piepag h2{
+        font-size: 14px;
+        margin-left: 90px;
+        margin-top: none;
+    }
+    .redesfooter{
+        margin-right: 40px;
+    }
+
+}
+@media (max-width:375px){
+    .logoprinci{
+        height: 40%;
+        width: 200px;
+        margin-right: 120px;
+
+    }
+    .secciones{
+        padding-top: 1px;
+    }
+    .secciones li a {
+        font-size: 12px;
+    }
+    .contacto h2{
+        font-size: 16px;
+    }
+    .contacto h3{
+        font-size: 12px;
+    }
+
+    .piepag h3{
+        font-size: 12px;
+        width: 70%;
+        margin-left: 70px;
+
+    }
+    .piepag h2{
+        font-size: 12px;
+        margin-left: 70px;
+    }
 
 
+}
+
+@media (max-width:320px){
+    .logoprinci{
+        height: 30%;
+        width: 150px;
+    }
+    .secciones li a{
+      font-size: 10px;
+    }
+    .contacto h2{
+        font-size: 12px;
+    }
+    .contacto h3{
+        font-size: 10px;
+    }
+    .form-text{
+        font-size: 12px;
+    }
+    .piepag h3{
+        margin-left: 40px;
+    }
+    .piepag h2{
+        margin-left: 40px;
+    }
+}
+
+/* media nosotros */
+
+@media (max-width:1440px){
+.nosotros1{
+    font-size: 30px;
+}
+.nosotros h1{
+    font-size: 20px;
+}
+}
+
+@media (max-width:1024px){
+    .nosotros1{
+        font-size: 32px;
+    }
+    .nosotros1 h1{
+        font-size: 36px;
+    }
+}
+
+@media (max-width:768px){
+    .nosotros1{
+        font-size: 26px;
+    }
+    .nosotros1 h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:428px){
+    .nosotros1{
+        font-size: 16px;
+    }
+    .nosotros1 h1{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:375px){
+    .nosotros1{
+        font-size: 14px;
+    }
+    .nosotros1 h1{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:320px){
+    .nosotros1{
+        font-size: 12px;
+    }
+    .nosotros1 h1{
+        font-size: 16px;
+    }
+}
