@@ -386,7 +386,7 @@ main .contactodiv {
   grid-template-areas: "contactenos1 contactenos2";
 }
 main .contactenos1 {
-  margin-left: 380px;
+  margin-left: 200px;
   color: white;
   text-align: center;
   font-size: 20px;
