@@ -570,4 +570,60 @@ main .fancy:hover .bottom-key-2 {
   width: 0;
 }
 
+@media (max-width: 1024px) {
+  main .sponsors h2 {
+    font-size: 30px;
+  }
+  main .contacto h2 {
+    font-size: 30px;
+  }
+  main .contacto h3 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    margin-bottom: 200px;
+    font-size: 20px;
+  }
+  main .sponsors h2 {
+    font-size: 26px;
+  }
+  main .contacto h2 {
+    font-size: 26px;
+  }
+  main .contacto h3 {
+    font-size: 24px;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  footer h3 {
+    font-size: 16px;
+  }
+  footer h2 {
+    font-size: 18px;
+    margin-left: 90px;
+  }
+  footer .redesfooter {
+    justify-content: center;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 428px) {
+  header .logoprinci {
+    width: 320px;
+  }
+  header ul {
+    flex-direction: column;
+    gap: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

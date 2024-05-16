@@ -1,0 +1,45 @@
+@media (max-width:768px){
+    header{
+        nav{
+            flex-direction: column;
+            ul{
+                flex-direction: column;
+                margin-bottom: 200px;
+                font-size: 20px;
+            }
+        }
+    }
+    main{
+        .sponsors{
+            h2{
+                font-size: 26px;
+            }
+        }
+        .contacto{
+            h2{
+                font-size: 26px;
+            }
+            h3{
+                font-size: 24px;
+            }
+        }
+    }
+    
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        h3{
+            font-size: 16px;
+        }
+
+        h2{
+            font-size: 18px;
+            margin-left: 90px;
+        }
+        .redesfooter{
+            justify-content: center;
+            margin-right: 30px;
+        }
+    }
+}

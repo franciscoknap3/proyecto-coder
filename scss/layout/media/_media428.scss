@@ -1,0 +1,12 @@
+@media (max-width:428px){
+    header{
+        .logoprinci{
+            width: 320px;
+            
+        }
+        ul{
+            flex-direction: column;
+            gap: none;
+        }
+    }
+}
