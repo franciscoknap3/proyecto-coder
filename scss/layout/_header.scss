@@ -1,8 +1,7 @@
+
 header{
     nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex (row, space-between, center);
         padding-top: 5px;
         padding-right: 5px;
         font-weight: bold;
