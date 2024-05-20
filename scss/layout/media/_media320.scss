@@ -1,3 +1,40 @@
 @media (max-width:320px){
-    
+    main{
+        // productos
+        .titulo-product{
+            h1{
+                font-size: 18px;
+            }
+        }
+        .product2{
+            h2{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 14px;
+            }
+        }
+        .product3{
+            h2{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 14px;
+            }
+        }
+
+        // Nosotros
+        .nosotros1{
+            h1{
+                font-size: 18px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+
+    }
+    footer{
+        
+    }
 }

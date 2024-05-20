@@ -4,6 +4,7 @@ main{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(1,1fr);
         grid-template-areas: "contactenos1 contactenos2";
+        margin-bottom: 70px;
         .contactenos1{
             margin-left: 200px;
             color: white;

@@ -227,8 +227,6 @@ main .imagenesnosotros {
   margin-right: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: "img1 img2 img3 img4";
 }
 main .imagenesnosotros img {
   width: 100%;
@@ -385,6 +383,7 @@ main .contactodiv {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "contactenos1 contactenos2";
+  margin-bottom: 70px;
 }
 main .contactodiv .contactenos1 {
   margin-left: 200px;
@@ -570,15 +569,111 @@ main .fancy:hover .bottom-key-2 {
   width: 0;
 }
 
+@media (max-width: 1440px) {
+  main .product2 h2 {
+    font-size: 20px;
+  }
+  main .product2 h3 {
+    font-size: 18px;
+  }
+  main .product2 p {
+    font-size: 14px;
+  }
+  main .product3 h2 {
+    font-size: 20px;
+  }
+  main .product3 h3 {
+    font-size: 18px;
+  }
+  main .product3 p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1150px) {
+  main .product2 h2 {
+    font-size: 18px;
+  }
+  main .product2 h3 {
+    font-size: 16px;
+  }
+  main .product2 p {
+    font-size: 12px;
+  }
+  main .product3 h2 {
+    font-size: 18px;
+  }
+  main .product3 h3 {
+    font-size: 16px;
+  }
+  main .product3 p {
+    font-size: 12px;
+  }
+}
 @media (max-width: 1024px) {
   main .sponsors h2 {
     font-size: 30px;
   }
   main .contacto h2 {
     font-size: 30px;
+    max-width: 100%;
   }
   main .contacto h3 {
     font-size: 26px;
+    max-width: 100%;
+  }
+  main .titulo-product h1 {
+    font-size: 34px;
+  }
+  main .product2 h2 {
+    font-size: 20px;
+    max-width: 100%;
+  }
+  main .product2 h3 {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  main .product2 p {
+    font-size: 10px;
+    max-width: 100%;
+  }
+  main .product3 h2 {
+    font-size: 20px;
+    max-width: 100%;
+  }
+  main .product3 h3 {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  main .product3 p {
+    font-size: 10px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 968px) {
+  main .productos2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "product1" "product2" "product3" "product4";
+  }
+  main .product2 {
+    border-bottom: solid 5px #401F71;
+  }
+  main .imagenesnosotros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "img1" "img2" "img3" "img4";
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  main .imagenesnosotros .img2 {
+    margin-top: 30px;
+  }
+  main .imagenesnosotros .img3 {
+    margin-top: 30px;
+  }
+  main .imagenesnosotros .img4 {
+    margin-top: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -598,6 +693,9 @@ main .fancy:hover .bottom-key-2 {
   }
   main .contacto h3 {
     font-size: 24px;
+  }
+  main .titulo-product h1 {
+    font-size: 28px;
   }
   footer {
     flex-direction: column;
@@ -623,6 +721,50 @@ main .fancy:hover .bottom-key-2 {
   header ul {
     flex-direction: column;
     gap: none;
+  }
+  main .titulo-product h1 {
+    font-size: 24px;
+  }
+  main .nosotros1 h1 {
+    font-size: 24px;
+  }
+  main .nosotros1 p {
+    font-size: 16px;
+  }
+  main .imagenesnosotros {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 375px) {
+  main .nosotros1 h1 {
+    font-size: 20px;
+  }
+  main .nosotros1 p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  main .titulo-product h1 {
+    font-size: 18px;
+  }
+  main .product2 h2 {
+    font-size: 16px;
+  }
+  main .product2 h3 {
+    font-size: 14px;
+  }
+  main .product3 h2 {
+    font-size: 16px;
+  }
+  main .product3 h3 {
+    font-size: 14px;
+  }
+  main .nosotros1 h1 {
+    font-size: 18px;
+  }
+  main .nosotros1 p {
+    font-size: 14px;
   }
 }
 
