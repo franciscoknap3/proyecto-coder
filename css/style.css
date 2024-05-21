@@ -702,13 +702,18 @@ main .fancy:hover .bottom-key-2 {
 @media (max-width: 768px) {
   header nav {
     flex-direction: column;
+    justify-content: center;
+  }
+  header nav .logoprinci {
+    justify-content: center;
   }
   header nav ul {
     flex-direction: column;
+    justify-content: center;
     margin-bottom: 90px;
     margin-top: 50px;
     font-size: 16px;
-    justify-content: center;
+    margin-right: 15px;
   }
   main .sponsors h2 {
     font-size: 26px;
@@ -724,11 +729,10 @@ main .fancy:hover .bottom-key-2 {
   }
   main .titulocontacto {
     font-size: 24px;
-    text-align: center;
   }
   main .contactodiv .contactenos1 iframe {
-    width: 400px;
-    height: 300px;
+    width: auto;
+    height: auto;
   }
   main .contactenos2 h2 {
     font-size: 18px;
@@ -745,7 +749,7 @@ main .fancy:hover .bottom-key-2 {
     font-size: 16px;
   }
   footer h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 90px;
   }
   footer .redesfooter {
