@@ -1,0 +1,37 @@
+@media (max-width:968px){
+    main{
+        // productos
+
+        .productos2{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-areas: "product1" "product2" "product3" "product4";
+        }
+        .product2{
+            border-bottom: solid 5px #401F71;
+        }
+
+        // nosotros
+
+        .imagenesnosotros{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1,1fr);
+            grid-template-areas: "img1" "img2" "img3" "img4";
+            margin-left: 80px;
+            margin-right: 80px;
+
+            .img2{
+                margin-top: 30px;
+            }
+            .img3{
+                margin-top: 30px;
+            }
+            .img4{
+                margin-top: 30px;
+            }
+        }
+
+        // contacto
+}
+}

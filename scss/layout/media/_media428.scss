@@ -1,0 +1,60 @@
+@media (max-width:428px){
+    header{
+        .logoprinci{
+            width: 320px;
+            
+        }
+        ul{
+            flex-direction: column;
+            gap: none;
+        }
+    }
+    main{
+
+        // productos
+
+        .titulo-product{
+            h1{
+                font-size: 24px;
+            }
+        }
+
+        // nosotros
+        .nosotros1{
+            h1{
+                font-size: 24px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .imagenesnosotros{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        // Tienda
+        .container-card{
+            width: 330px;
+            height: 600px;
+            p{
+                margin-bottom: 10px;
+            }
+            .button{
+                width: 80px;
+                height: 30px;
+                margin-left: 124px;
+            }
+        }
+
+        // contacto
+        .contactodiv{
+            .contactenos1{
+                iframe{
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

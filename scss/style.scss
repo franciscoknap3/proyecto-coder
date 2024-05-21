@@ -1,4 +1,8 @@
+// utilidades
 @import "./utilities/mixins";
+
+// layouts
+
 @import "./base/reset";
 @import "./layout/header";
 @import "./layout/main-index";
@@ -9,5 +13,14 @@
 @import "./layout/main-contacto";
 
 
+// mediaqueris
 
+@import "./layout/media/media1440";
+@import "./layout/media/media1150";
+@import "./layout/media/media1024";
+@import "./layout/media/media968";
+@import "./layout/media/media768";
+@import "./layout/media/media428";
+@import "./layout/media/media375";
+@import "./layout/media/media320";
 
