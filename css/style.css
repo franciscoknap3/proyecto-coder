@@ -262,7 +262,7 @@ main .container-card {
   overflow: hidden;
   box-shadow: 1px 1px 5px white;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   align-items: center;
 }
 main .container-card h2 {
@@ -379,23 +379,29 @@ main .container-card div img {
 }
 
 main .contactodiv {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: "contactenos1 contactenos2";
-  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main .contactodiv .contactenos1 {
-  margin-left: 200px;
   color: white;
   text-align: center;
   font-size: 20px;
 }
-main .contactodiv .contactenos2 {
-  margin-top: 25px;
-  margin-right: 520px;
+main .contactenos2 {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-main .contactodiv .form {
+main .contactenos3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+main .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -588,6 +594,20 @@ main .fancy:hover .bottom-key-2 {
   main .product3 p {
     font-size: 14px;
   }
+  main .container-card {
+    width: 380px;
+    height: 700px;
+  }
+  main .container-card p {
+    margin-bottom: 20px;
+  }
+  main .container-card .button {
+    margin-left: 140px;
+  }
+  main .contactodiv .contactenos1 iframe {
+    width: 600px;
+    height: 450px;
+  }
 }
 @media (max-width: 1150px) {
   main .product2 h2 {
@@ -607,6 +627,9 @@ main .fancy:hover .bottom-key-2 {
   }
   main .product3 p {
     font-size: 12px;
+  }
+  main .container-card .button {
+    margin-left: 138px;
   }
 }
 @media (max-width: 1024px) {
@@ -682,8 +705,10 @@ main .fancy:hover .bottom-key-2 {
   }
   header nav ul {
     flex-direction: column;
-    margin-bottom: 200px;
-    font-size: 20px;
+    margin-bottom: 90px;
+    margin-top: 50px;
+    font-size: 16px;
+    justify-content: center;
   }
   main .sponsors h2 {
     font-size: 26px;
@@ -696,6 +721,20 @@ main .fancy:hover .bottom-key-2 {
   }
   main .titulo-product h1 {
     font-size: 28px;
+  }
+  main .titulocontacto {
+    font-size: 24px;
+    text-align: center;
+  }
+  main .contactodiv .contactenos1 iframe {
+    width: 400px;
+    height: 300px;
+  }
+  main .contactenos2 h2 {
+    font-size: 18px;
+  }
+  main .form {
+    max-width: 280px;
   }
   footer {
     flex-direction: column;
@@ -735,6 +774,22 @@ main .fancy:hover .bottom-key-2 {
     margin-left: 50px;
     margin-right: 50px;
   }
+  main .container-card {
+    width: 330px;
+    height: 600px;
+  }
+  main .container-card p {
+    margin-bottom: 10px;
+  }
+  main .container-card .button {
+    width: 80px;
+    height: 30px;
+    margin-left: 124px;
+  }
+  main .contactodiv .contactenos1 iframe {
+    width: auto;
+    height: auto;
+  }
 }
 @media (max-width: 375px) {
   main .nosotros1 h1 {
@@ -742,6 +797,18 @@ main .fancy:hover .bottom-key-2 {
   }
   main .nosotros1 p {
     font-size: 16px;
+  }
+  .container-card {
+    width: 280px;
+    height: 700px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .container-card h2 {
+    font-size: 16px;
+  }
+  .container-card p {
+    font-size: 10px;
   }
 }
 @media (max-width: 320px) {
@@ -765,6 +832,20 @@ main .fancy:hover .bottom-key-2 {
   }
   main .nosotros1 p {
     font-size: 14px;
+  }
+  main .container-card {
+    width: 250px;
+    height: 600px;
+  }
+  main .container-card h2 {
+    font-size: 14px;
+  }
+  main .container-card p {
+    font-size: 10px;
+  }
+  main .container-card .button {
+    margin-bottom: 5px;
+    margin-left: 86px;
   }
 }
 

@@ -23,5 +23,28 @@ main{
         }
     }
 
+    // tienda
+    .container-card{
+        width: 380px;
+        height: 700px;
+        p{
+            margin-bottom: 20px;
+        }
+        .button{
+            margin-left: 140px;
+        }
+    }
+
+    // contactenos
+    .contactodiv{
+        .contactenos1{
+            iframe{
+                width: 600px;
+                height: 450px;
+            }
+        }
+    }
+
+
 }
 }

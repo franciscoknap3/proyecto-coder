@@ -32,5 +32,29 @@
             margin-left: 50px;
             margin-right: 50px;
         }
+
+        // Tienda
+        .container-card{
+            width: 330px;
+            height: 600px;
+            p{
+                margin-bottom: 10px;
+            }
+            .button{
+                width: 80px;
+                height: 30px;
+                margin-left: 124px;
+            }
+        }
+
+        // contacto
+        .contactodiv{
+            .contactenos1{
+                iframe{
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
     }
 }

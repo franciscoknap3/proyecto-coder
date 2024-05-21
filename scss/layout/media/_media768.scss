@@ -4,8 +4,11 @@
             flex-direction: column;
             ul{
                 flex-direction: column;
-                margin-bottom: 200px;
-                font-size: 20px;
+                margin-bottom: 90px;
+                margin-top: 50px;
+                font-size: 16px;
+                justify-content: center;
+
             }
         }
     }
@@ -28,7 +31,30 @@
                 font-size: 28px;
             }
         }
+        // tienda
 
+
+        // contacto
+        .titulocontacto{
+            font-size: 24px;
+            text-align: center;
+        }
+        .contactodiv{
+            .contactenos1{
+                iframe{
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+        }
+        .contactenos2{
+            h2{
+                font-size: 18px;
+            }
+        }
+        .form{
+            max-width: 280px;
+        }
 
 
     }
