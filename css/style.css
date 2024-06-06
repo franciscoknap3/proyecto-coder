@@ -92,6 +92,10 @@ main .contacto {
 main .contacto .form-text {
   color: white;
 }
+main .contacto button {
+  color: white;
+  background-color: #824D74;
+}
 @keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
@@ -813,7 +817,7 @@ main .fancy:hover .bottom-key-2 {
     font-size: 16px;
   }
   .container-card p {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 @media (max-width: 320px) {
@@ -824,29 +828,29 @@ main .fancy:hover .bottom-key-2 {
     font-size: 16px;
   }
   main .product2 h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
   main .product3 h2 {
     font-size: 16px;
   }
   main .product3 h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
   main .nosotros1 h1 {
     font-size: 18px;
   }
   main .nosotros1 p {
-    font-size: 14px;
+    font-size: 16px;
   }
   main .container-card {
     width: 250px;
     height: 600px;
   }
   main .container-card h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
   main .container-card p {
-    font-size: 10px;
+    font-size: 16px;
   }
   main .container-card .button {
     margin-bottom: 5px;
